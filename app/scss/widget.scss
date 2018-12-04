@@ -1,0 +1,207 @@
+
+@import 'fonts';
+@import 'mixin';
+
+
+
+body.widget {
+  max-width: 525px;
+  max-height: 600px;
+  border: unset;
+  background-color: white;
+  box-sizing: border-box;
+
+  @include breakpoint ("small") {
+	max-width: unset !important;
+    max-height: calc(600px - 270px);
+  }
+
+  .container {
+	position: relative;
+	max-height: 600px;
+	height: 600px;
+	width: 100%;
+	max-width: 525px;
+	border: unset;
+
+	@include breakpoint ("small") {
+		max-height: calc(600px - 270px);
+		height: calc(600px - 270px);
+		width: 100% !important;
+		max-width: unset !important;
+		border: unset;
+	}
+
+
+	.promotion {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border: unset;
+
+		.pre-entry {
+			position: absolute;
+			width: 100%;
+			height: 300px;
+			top: 0px;
+			left: 0px;
+
+			@include breakpoint ("small") {
+				height: 180px;
+			}
+
+			.content {
+				.logo {
+					margin-left: 40px;
+					margin-top: 30px;
+					margin-right: unset;
+					margin-bottom: unset;
+			
+					@include breakpoint ("small") {
+						display: none;
+					}
+				}
+
+				.title {
+					text-align: left;
+					margin-left: 40px;
+					padding: unset;
+					margin-top: 40px;
+
+					@include breakpoint ("small") {
+						margin-top: 15px;
+						margin-bottom: 5px;
+					}
+					
+					p {
+						font-family:"Proxima N W02 Bold";
+						color: black;
+						font-size: 27px;
+						padding: unset;
+						margin: unset;
+
+						@include breakpoint ("small") {
+							font-family:"Proxima N W02 Bold";
+							color: black;
+							font-size: 27px;
+							padding: unset;
+							margin: unset;
+						}
+					}
+				}
+
+				.description {
+					background: unset;
+					border: unset;
+					padding-left: unset;
+					padding-top: unset;
+					padding-right: unset;
+					margin-left: 40px;
+
+					p {
+						padding-left: unset;
+						padding-right: unset;
+						font-family:"Proxima N W01 Reg";
+						color: black;
+						font-size: 16px;
+
+						@include breakpoint ("small") {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			.form {
+				background: unset;
+				border: unset;
+				left: 40px;
+				margin-left: unset;
+				padding-left: unset;
+				position: absolute;
+				width: calc( 100% - 80px);
+				height: 350px;
+				top: 250px;
+
+				@include breakpoint ("small") {
+					top: 70px;
+				}
+
+				#first_name, #last_name, #email {
+					height: 50px;
+					
+					@include breakpoint ("small") {
+						height: 25px;
+					}
+				}
+
+				.form_label_text {
+					font-family:"Proxima N W01 Reg";
+					font-style: italic;
+					font-size: 14px;
+					max-width: 300px;
+				
+					@include breakpoint ("small") {
+						font-size: 12px;
+					}
+				}
+
+				.submit {
+					background-color: black;
+					font-family:"Proxima N W02 Bold";
+					font-size: 16px;
+					color: white;
+					max-width: 140px;
+					position: absolute;
+					bottom: 40px;
+				
+					@include breakpoint ("small") {
+						bottom: unset;
+						min-height: unset;
+						height: 30px;
+						padding: unset;
+						font-size: 14px;
+						line-height: 28px;
+						margin-top: 5px;
+					}
+					
+					&:hover {
+						background-color: rgb(40,40,40);
+						color: white;
+						font-size: unset;
+					}
+				}
+			}
+
+		
+
+
+		}
+
+		.footer {
+			visibility: hidden;
+		}
+
+
+	}
+
+
+		
+  }
+}
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
