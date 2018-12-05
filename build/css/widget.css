@@ -24,11 +24,19 @@ body.widget {
   max-height: 600px;
   border: unset;
   background-color: white;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 525px;
+  right: 0px; }
   @media all and (min-width: 705px) and (max-width: 974px) {
     body.widget {
-      max-width: unset !important;
-      max-height: calc(600px - 270px); } }
+      max-width: unset;
+      max-height: calc(600px - 270px);
+      width: 100%; } }
+  @media (max-width: 704px) {
+    body.widget {
+      width: 100%; } }
   body.widget .container {
     position: relative;
     max-height: 600px;
@@ -40,14 +48,31 @@ body.widget {
       body.widget .container {
         max-height: calc(600px - 270px);
         height: calc(600px - 270px);
-        width: 100% !important;
-        max-width: unset !important;
+        width: 100%;
+        max-width: unset;
         border: unset; } }
+    @media (max-width: 704px) {
+      body.widget .container {
+        max-height: 410px;
+        height: 410px;
+        width: 100%;
+        border: unset;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: unset;
+        padding-left: unset; } }
     body.widget .container .promotion {
       position: absolute;
       width: 100%;
       height: 100%;
       border: unset; }
+      @media (max-width: 704px) {
+        body.widget .container .promotion {
+          max-width: 414px;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0px;
+          right: 0px; } }
       body.widget .container .promotion .pre-entry {
         position: absolute;
         width: 100%;
@@ -57,12 +82,24 @@ body.widget {
         @media all and (min-width: 705px) and (max-width: 974px) {
           body.widget .container .promotion .pre-entry {
             height: 180px; } }
+        @media (max-width: 704px) {
+          body.widget .container .promotion .pre-entry {
+            height: 180px;
+            max-width: 414px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0px;
+            right: 0px; } }
         body.widget .container .promotion .pre-entry .content .logo {
           margin-left: 40px;
           margin-top: 30px;
           margin-right: unset;
-          margin-bottom: unset; }
+          margin-bottom: unset;
+          display: block; }
           @media all and (min-width: 705px) and (max-width: 974px) {
+            body.widget .container .promotion .pre-entry .content .logo {
+              display: none; } }
+          @media (max-width: 704px) {
             body.widget .container .promotion .pre-entry .content .logo {
               display: none; } }
         body.widget .container .promotion .pre-entry .content .title {
@@ -74,6 +111,12 @@ body.widget {
             body.widget .container .promotion .pre-entry .content .title {
               margin-top: 15px;
               margin-bottom: 5px; } }
+          @media (max-width: 704px) {
+            body.widget .container .promotion .pre-entry .content .title {
+              margin-top: 15px;
+              margin-bottom: 5px;
+              padding-left: unset;
+              margin-left: 10px; } }
           body.widget .container .promotion .pre-entry .content .title p {
             font-family: "Proxima N W02 Bold";
             color: black;
@@ -82,11 +125,10 @@ body.widget {
             margin: unset; }
             @media all and (min-width: 705px) and (max-width: 974px) {
               body.widget .container .promotion .pre-entry .content .title p {
-                font-family: "Proxima N W02 Bold";
-                color: black;
-                font-size: 27px;
-                padding: unset;
-                margin: unset; } }
+                font-size: 24px; } }
+            @media (max-width: 704px) {
+              body.widget .container .promotion .pre-entry .content .title p {
+                font-size: 22px; } }
         body.widget .container .promotion .pre-entry .content .description {
           background: unset;
           border: unset;
@@ -94,6 +136,11 @@ body.widget {
           padding-top: unset;
           padding-right: unset;
           margin-left: 40px; }
+          @media (max-width: 704px) {
+            body.widget .container .promotion .pre-entry .content .description {
+              padding-top: 5px;
+              padding-left: unset;
+              margin-left: 10px; } }
           body.widget .container .promotion .pre-entry .content .description p {
             padding-left: unset;
             padding-right: unset;
@@ -103,6 +150,10 @@ body.widget {
             @media all and (min-width: 705px) and (max-width: 974px) {
               body.widget .container .promotion .pre-entry .content .description p {
                 font-size: 14px; } }
+            @media (max-width: 704px) {
+              body.widget .container .promotion .pre-entry .content .description p {
+                font-size: 12px;
+                line-height: 14px; } }
         body.widget .container .promotion .pre-entry .form {
           background: unset;
           border: unset;
@@ -116,9 +167,26 @@ body.widget {
           @media all and (min-width: 705px) and (max-width: 974px) {
             body.widget .container .promotion .pre-entry .form {
               top: 70px; } }
+          @media (max-width: 704px) {
+            body.widget .container .promotion .pre-entry .form {
+              top: 100px;
+              width: calc(100% - 20px);
+              padding-right: unset;
+              margin-top: unset;
+              padding-top: unset;
+              margin-right: auto;
+              margin-left: auto;
+              left: 0px;
+              right: 0px; } }
+          @media (max-width: 704px) {
+            body.widget .container .promotion .pre-entry .form form {
+              width: 100%; } }
           body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
             height: 50px; }
             @media all and (min-width: 705px) and (max-width: 974px) {
+              body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
+                height: 25px; } }
+            @media (max-width: 704px) {
               body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
                 height: 25px; } }
           body.widget .container .promotion .pre-entry .form .form_label_text {
@@ -127,6 +195,9 @@ body.widget {
             font-size: 14px;
             max-width: 300px; }
             @media all and (min-width: 705px) and (max-width: 974px) {
+              body.widget .container .promotion .pre-entry .form .form_label_text {
+                font-size: 12px; } }
+            @media (max-width: 704px) {
               body.widget .container .promotion .pre-entry .form .form_label_text {
                 font-size: 12px; } }
           body.widget .container .promotion .pre-entry .form .submit {
@@ -138,6 +209,15 @@ body.widget {
             position: absolute;
             bottom: 40px; }
             @media all and (min-width: 705px) and (max-width: 974px) {
+              body.widget .container .promotion .pre-entry .form .submit {
+                bottom: unset;
+                min-height: unset;
+                height: 30px;
+                padding: unset;
+                font-size: 14px;
+                line-height: 28px;
+                margin-top: 5px; } }
+            @media (max-width: 704px) {
               body.widget .container .promotion .pre-entry .form .submit {
                 bottom: unset;
                 min-height: unset;

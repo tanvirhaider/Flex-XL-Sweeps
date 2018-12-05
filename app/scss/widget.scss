@@ -3,17 +3,28 @@
 @import 'mixin';
 
 
-
 body.widget {
   max-width: 525px;
   max-height: 600px;
   border: unset;
   background-color: white;
   box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 525px;
+  right: 0px;
 
   @include breakpoint ("small") {
-	max-width: unset !important;
-    max-height: calc(600px - 270px);
+	max-width: unset;
+	max-height: calc(600px - 270px);
+	width: 100%;
+  }
+
+  @include breakpoint ("mobile") {
+	  width: 100%;
+	//max-width: 414px;
+	//max-height: 410px;
+	//right: 0px;
   }
 
   .container {
@@ -23,13 +34,25 @@ body.widget {
 	width: 100%;
 	max-width: 525px;
 	border: unset;
+	
 
 	@include breakpoint ("small") {
 		max-height: calc(600px - 270px);
 		height: calc(600px - 270px);
-		width: 100% !important;
-		max-width: unset !important;
+		width: 100%;
+		max-width: unset;
 		border: unset;
+	}
+
+	@include breakpoint ("mobile")  {
+		max-height: 410px;
+		height: 410px;
+		width: 100%;
+		border: unset;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: unset;
+		padding-left: unset;
 	}
 
 
@@ -38,6 +61,14 @@ body.widget {
 		width: 100%;
 		height: 100%;
 		border: unset;
+
+		@include breakpoint ("mobile") {
+			max-width: 414px;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0px;
+			right: 0px;
+		}
 
 		.pre-entry {
 			position: absolute;
@@ -50,14 +81,28 @@ body.widget {
 				height: 180px;
 			}
 
+			@include breakpoint ("mobile") {
+				height: 180px;
+				max-width: 414px;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0px;
+				right: 0px;
+			}
+
 			.content {
 				.logo {
 					margin-left: 40px;
 					margin-top: 30px;
 					margin-right: unset;
 					margin-bottom: unset;
+					display: block;
 			
 					@include breakpoint ("small") {
+						display: none;
+					}
+
+					@include breakpoint ("mobile") {
 						display: none;
 					}
 				}
@@ -72,6 +117,13 @@ body.widget {
 						margin-top: 15px;
 						margin-bottom: 5px;
 					}
+
+					@include breakpoint ("mobile") {
+						margin-top: 15px;
+						margin-bottom: 5px;
+						padding-left: unset;
+						margin-left: 10px;
+					}
 					
 					p {
 						font-family:"Proxima N W02 Bold";
@@ -81,11 +133,11 @@ body.widget {
 						margin: unset;
 
 						@include breakpoint ("small") {
-							font-family:"Proxima N W02 Bold";
-							color: black;
-							font-size: 27px;
-							padding: unset;
-							margin: unset;
+							font-size: 24px;
+						}
+
+						@include breakpoint ("mobile") {
+							font-size: 22px;
 						}
 					}
 				}
@@ -98,6 +150,12 @@ body.widget {
 					padding-right: unset;
 					margin-left: 40px;
 
+					@include breakpoint ("mobile") {
+						padding-top: 5px;
+						padding-left: unset;
+						margin-left: 10px;
+					}
+
 					p {
 						padding-left: unset;
 						padding-right: unset;
@@ -107,6 +165,12 @@ body.widget {
 
 						@include breakpoint ("small") {
 							font-size: 14px;
+						}
+
+						@include breakpoint ("mobile") {
+							font-size: 12px;
+							line-height: 14px;
+						
 						}
 					}
 				}
@@ -127,10 +191,36 @@ body.widget {
 					top: 70px;
 				}
 
+				@include breakpoint ("mobile") {
+					top: 100px;
+					width: calc(100% - 20px);
+					padding-right: unset;
+					
+					margin-top: unset;
+					padding-top: unset;
+
+					margin-right: auto;
+					margin-left: auto;
+					left: 0px;
+					right: 0px;
+					
+				}
+
+				form {
+					@include breakpoint ("mobile") {
+						width: 100%;
+					}
+
+				}
+
 				#first_name, #last_name, #email {
 					height: 50px;
 					
 					@include breakpoint ("small") {
+						height: 25px;
+					}
+
+					@include breakpoint ("mobile") {
 						height: 25px;
 					}
 				}
@@ -142,6 +232,10 @@ body.widget {
 					max-width: 300px;
 				
 					@include breakpoint ("small") {
+						font-size: 12px;
+					}
+
+					@include breakpoint ("mobile") {
 						font-size: 12px;
 					}
 				}
@@ -156,6 +250,16 @@ body.widget {
 					bottom: 40px;
 				
 					@include breakpoint ("small") {
+						bottom: unset;
+						min-height: unset;
+						height: 30px;
+						padding: unset;
+						font-size: 14px;
+						line-height: 28px;
+						margin-top: 5px;
+					}
+
+					@include breakpoint ("mobile") {
 						bottom: unset;
 						min-height: unset;
 						height: 30px;
@@ -183,12 +287,12 @@ body.widget {
 		}
 
 
-	}
+	} // promotion
 
 
 		
-  }
-}
+  } // container
+} // body.widget
 
 
   

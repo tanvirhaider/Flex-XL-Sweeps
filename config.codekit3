@@ -31,6 +31,28 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/app/assets/logo-black.png": {
+		"ft": 32768,
+		"iS": 2779,
+		"oA": 0,
+		"oAP": "/build/assets/logo-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/app/assets/logo-white.png": {
+		"ft": 32768,
+		"iS": 2033,
+		"oA": 0,
+		"oAP": "/build/assets/logo-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -111,7 +133,7 @@
 		"uL": 1
 		},
 	"/app/scss/main.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -154,6 +176,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/build/flex-xl-sweeps-desktop-v1.zip",
+		"oF": 0
+		},
+	"/flex-xl-sweeps-universal-v0.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/flex-xl-sweeps-universal-v0.zip",
 		"oF": 0
 		}
 	},

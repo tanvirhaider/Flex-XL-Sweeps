@@ -243,7 +243,7 @@ function checkIfAdKitReady(event) {
 function initializeCreative() {
     initializeGlobalVariables();
     setCreativeVersion();
-    init(window);
+    sizeContentArea(window);
 }
 
 window.addEventListener("message",function(){try{eventManager.apply(this, arguments);}catch(e){}},false);
