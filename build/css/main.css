@@ -133,6 +133,26 @@ body {
       width: 100%;
       right: 0px;
       background-color: white; }
+      #willow-ad-stage #adContainer .sweeps-content .desktop-large-logo {
+        position: absolute;
+        width: calc(525px - 35px);
+        right: 0px;
+        top: 35px;
+        height: 45px;
+        background-color: white;
+        background-image: url(../assets/logo-black.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        pointer-events: auto;
+        background-position: 0% 0%;
+        box-sizing: border-box; }
+        @media all and (min-width: 705px) and (max-width: 974px) {
+          #willow-ad-stage #adContainer .sweeps-content .desktop-large-logo {
+            display: none; } }
+        @media (max-width: 704px) {
+          #willow-ad-stage #adContainer .sweeps-content .desktop-large-logo {
+            display: none; } }
       @media all and (min-width: 705px) and (max-width: 974px) {
         #willow-ad-stage #adContainer .sweeps-content {
           width: 100%;

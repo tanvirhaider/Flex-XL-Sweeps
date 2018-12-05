@@ -4,6 +4,9 @@
 @import 'mixin';
 @import 'reset';
 
+$desktop_tablet_padding: 35px;
+$mobile_padding: 25px;
+
 body {
     margin: 0px;
     background-color: rgba(255, 255, 255,0);
@@ -86,7 +89,7 @@ body {
 
             .heroimg {
                 background-image: url(../assets/hero.jpg);
-               background-color: darkgray;
+                background-color: darkgray;
                 background-size: cover;
                 background-position: 50% 50%;
                 position: absolute;
@@ -113,6 +116,31 @@ body {
             width: 100%;
             right: 0px;
             background-color:white;
+
+            .desktop-large-logo {
+                position: absolute;
+                width: calc(525px - 35px);
+                right: 0px;
+                top: $desktop_tablet_padding;
+                height: 45px;
+                background-color: white;
+                background-image: url(../assets/logo-black.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+                pointer-events: auto;
+                //margin-left: 30px;
+                background-position: 0% 0%;
+                box-sizing: border-box;
+
+                @include breakpoint ("small") {
+                    display: none;
+                }
+
+                @include breakpoint ("mobile") {
+                    display: none;
+                }
+            }
 
             @include breakpoint ("small") {
                 width: 100%;

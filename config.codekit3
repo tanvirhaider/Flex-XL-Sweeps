@@ -184,6 +184,13 @@
 		"oA": 0,
 		"oAP": "/build/flex-xl-sweeps-universal-v0.zip",
 		"oF": 0
+		},
+	"/flex-xl-sweeps-universal-v1.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/flex-xl-sweeps-universal-v1.zip",
+		"oF": 0
 		}
 	},
 "hooks": [

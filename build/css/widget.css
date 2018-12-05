@@ -76,7 +76,7 @@ body.widget {
       body.widget .container .promotion .pre-entry {
         position: absolute;
         width: 100%;
-        height: 300px;
+        height: 100%;
         top: 0px;
         left: 0px; }
         @media all and (min-width: 705px) and (max-width: 974px) {
@@ -90,80 +90,91 @@ body.widget {
             margin-right: auto;
             left: 0px;
             right: 0px; } }
-        body.widget .container .promotion .pre-entry .content .logo {
-          margin-left: 40px;
-          margin-top: 30px;
-          margin-right: unset;
-          margin-bottom: unset;
-          display: block; }
+        body.widget .container .promotion .pre-entry .content {
+          padding-top: 80px; }
           @media all and (min-width: 705px) and (max-width: 974px) {
-            body.widget .container .promotion .pre-entry .content .logo {
-              display: none; } }
+            body.widget .container .promotion .pre-entry .content {
+              padding-top: unset; } }
           @media (max-width: 704px) {
-            body.widget .container .promotion .pre-entry .content .logo {
-              display: none; } }
-        body.widget .container .promotion .pre-entry .content .title {
-          text-align: left;
-          margin-left: 40px;
-          padding: unset;
-          margin-top: 40px; }
-          @media all and (min-width: 705px) and (max-width: 974px) {
-            body.widget .container .promotion .pre-entry .content .title {
-              margin-top: 15px;
-              margin-bottom: 5px; } }
-          @media (max-width: 704px) {
-            body.widget .container .promotion .pre-entry .content .title {
-              margin-top: 15px;
-              margin-bottom: 5px;
-              padding-left: unset;
-              margin-left: 10px; } }
-          body.widget .container .promotion .pre-entry .content .title p {
-            font-family: "Proxima N W02 Bold";
-            color: black;
-            font-size: 27px;
+            body.widget .container .promotion .pre-entry .content {
+              padding-top: unset; } }
+          body.widget .container .promotion .pre-entry .content .logo {
+            margin-left: 40px;
+            margin-top: 30px;
+            margin-right: unset;
+            margin-bottom: unset;
+            display: block; }
+            @media all and (min-width: 705px) and (max-width: 974px) {
+              body.widget .container .promotion .pre-entry .content .logo {
+                display: none; } }
+            @media (max-width: 704px) {
+              body.widget .container .promotion .pre-entry .content .logo {
+                display: none; } }
+          body.widget .container .promotion .pre-entry .content .title {
+            text-align: left;
+            margin-left: 35px;
             padding: unset;
-            margin: unset; }
+            margin-top: 40px; }
             @media all and (min-width: 705px) and (max-width: 974px) {
-              body.widget .container .promotion .pre-entry .content .title p {
-                font-size: 24px; } }
+              body.widget .container .promotion .pre-entry .content .title {
+                margin-top: 15px;
+                margin-bottom: 5px; } }
             @media (max-width: 704px) {
-              body.widget .container .promotion .pre-entry .content .title p {
-                font-size: 22px; } }
-        body.widget .container .promotion .pre-entry .content .description {
-          background: unset;
-          border: unset;
-          padding-left: unset;
-          padding-top: unset;
-          padding-right: unset;
-          margin-left: 40px; }
-          @media (max-width: 704px) {
-            body.widget .container .promotion .pre-entry .content .description {
-              padding-top: 5px;
-              padding-left: unset;
-              margin-left: 10px; } }
-          body.widget .container .promotion .pre-entry .content .description p {
+              body.widget .container .promotion .pre-entry .content .title {
+                margin-top: 15px;
+                margin-bottom: 5px;
+                padding-left: unset;
+                margin-left: 10px; } }
+            body.widget .container .promotion .pre-entry .content .title p {
+              font-family: "Proxima N W02 Bold";
+              color: black;
+              font-size: 27px;
+              padding: unset;
+              margin: unset; }
+              @media all and (min-width: 705px) and (max-width: 974px) {
+                body.widget .container .promotion .pre-entry .content .title p {
+                  font-size: 24px; } }
+              @media (max-width: 704px) {
+                body.widget .container .promotion .pre-entry .content .title p {
+                  font-size: 22px; } }
+          body.widget .container .promotion .pre-entry .content .description {
+            background: unset;
+            border: unset;
             padding-left: unset;
+            padding-top: unset;
             padding-right: unset;
-            font-family: "Proxima N W01 Reg";
-            color: black;
-            font-size: 16px; }
-            @media all and (min-width: 705px) and (max-width: 974px) {
-              body.widget .container .promotion .pre-entry .content .description p {
-                font-size: 14px; } }
+            margin-left: 35px; }
             @media (max-width: 704px) {
-              body.widget .container .promotion .pre-entry .content .description p {
-                font-size: 12px;
-                line-height: 14px; } }
+              body.widget .container .promotion .pre-entry .content .description {
+                padding-top: 5px;
+                padding-left: unset;
+                margin-left: 10px; } }
+            body.widget .container .promotion .pre-entry .content .description p {
+              padding-left: unset;
+              padding-right: unset;
+              font-family: "Proxima N W01 Reg";
+              color: black;
+              font-size: 16px; }
+              @media all and (min-width: 705px) and (max-width: 974px) {
+                body.widget .container .promotion .pre-entry .content .description p {
+                  font-size: 14px; } }
+              @media (max-width: 704px) {
+                body.widget .container .promotion .pre-entry .content .description p {
+                  font-size: 12px;
+                  line-height: 14px; } }
         body.widget .container .promotion .pre-entry .form {
           background: unset;
           border: unset;
-          left: 40px;
+          left: 35px;
           margin-left: unset;
           padding-left: unset;
           position: absolute;
-          width: calc( 100% - 80px);
+          width: calc( 100% - 70px);
           height: 350px;
-          top: 250px; }
+          top: 250px;
+          margin-right: unset;
+          margin-bottom: unset;
+          padding-right: unset; }
           @media all and (min-width: 705px) and (max-width: 974px) {
             body.widget .container .promotion .pre-entry .form {
               top: 70px; } }
@@ -182,7 +193,8 @@ body.widget {
             body.widget .container .promotion .pre-entry .form form {
               width: 100%; } }
           body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
-            height: 50px; }
+            height: 50px;
+            background-color: #F7F7F7; }
             @media all and (min-width: 705px) and (max-width: 974px) {
               body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
                 height: 25px; } }
@@ -207,7 +219,7 @@ body.widget {
             color: white;
             max-width: 140px;
             position: absolute;
-            bottom: 40px; }
+            bottom: 35px; }
             @media all and (min-width: 705px) and (max-width: 974px) {
               body.widget .container .promotion .pre-entry .form .submit {
                 bottom: unset;
@@ -230,5 +242,13 @@ body.widget {
               background-color: #282828;
               color: white;
               font-size: unset; }
+      body.widget .container .promotion .post-entry {
+        padding-top: 100px; }
+        @media (max-width: 704px) {
+          body.widget .container .promotion .post-entry {
+            padding-top: unset; } }
+        @media all and (min-width: 705px) and (max-width: 974px) {
+          body.widget .container .promotion .post-entry {
+            padding-top: unset; } }
       body.widget .container .promotion .footer {
         visibility: hidden; }

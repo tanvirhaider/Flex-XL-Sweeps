@@ -2,6 +2,9 @@
 @import 'fonts';
 @import 'mixin';
 
+$desktop_tablet_padding: 35px;
+$mobile_padding: 25px;
+
 
 body.widget {
   max-width: 525px;
@@ -73,7 +76,7 @@ body.widget {
 		.pre-entry {
 			position: absolute;
 			width: 100%;
-			height: 300px;
+			height: 100%;
 			top: 0px;
 			left: 0px;
 
@@ -91,6 +94,17 @@ body.widget {
 			}
 
 			.content {
+
+				padding-top: 80px;
+
+				@include breakpoint ("small") {
+					padding-top: unset;
+				}
+
+				@include breakpoint ("mobile") {
+					padding-top: unset;
+				}
+
 				.logo {
 					margin-left: 40px;
 					margin-top: 30px;
@@ -100,16 +114,18 @@ body.widget {
 			
 					@include breakpoint ("small") {
 						display: none;
+						
 					}
 
 					@include breakpoint ("mobile") {
 						display: none;
+						
 					}
 				}
 
 				.title {
 					text-align: left;
-					margin-left: 40px;
+					margin-left: $desktop_tablet_padding;
 					padding: unset;
 					margin-top: 40px;
 
@@ -148,7 +164,7 @@ body.widget {
 					padding-left: unset;
 					padding-top: unset;
 					padding-right: unset;
-					margin-left: 40px;
+					margin-left: $desktop_tablet_padding;
 
 					@include breakpoint ("mobile") {
 						padding-top: 5px;
@@ -179,13 +195,16 @@ body.widget {
 			.form {
 				background: unset;
 				border: unset;
-				left: 40px;
+				left: $desktop_tablet_padding;
 				margin-left: unset;
 				padding-left: unset;
 				position: absolute;
-				width: calc( 100% - 80px);
+				width: calc( 100% - 70px);
 				height: 350px;
 				top: 250px;
+				margin-right: unset;
+				margin-bottom: unset;
+				padding-right: unset;
 
 				@include breakpoint ("small") {
 					top: 70px;
@@ -215,6 +234,7 @@ body.widget {
 
 				#first_name, #last_name, #email {
 					height: 50px;
+					background-color: #F7F7F7;
 					
 					@include breakpoint ("small") {
 						height: 25px;
@@ -247,7 +267,7 @@ body.widget {
 					color: white;
 					max-width: 140px;
 					position: absolute;
-					bottom: 40px;
+					bottom: $desktop_tablet_padding;
 				
 					@include breakpoint ("small") {
 						bottom: unset;
@@ -277,9 +297,18 @@ body.widget {
 				}
 			}
 
-		
+		} // pre-entry
 
+		.post-entry {
+			padding-top: 100px;
 
+			@include breakpoint ("mobile") {
+				padding-top: unset;
+			}
+
+			@include breakpoint ("small") {
+				padding-top: unset;
+			}
 		}
 
 		.footer {

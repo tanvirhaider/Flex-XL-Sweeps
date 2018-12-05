@@ -308,6 +308,11 @@ window.addEventListener("load", function(event) {checkIfAdKitReady();});
 function init () {
     console.log("start the ad");
 
+    // desktop-logo
+
+    var Dlogo = document.querySelector("#desktop-logo");
+    Dlogo.addEventListener("click", heroClicked);
+
     var hero = document.querySelector(".hero");
     hero.addEventListener("click", heroClicked);
 
