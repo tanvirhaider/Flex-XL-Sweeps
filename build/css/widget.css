@@ -19,6 +19,19 @@
 /* -------------------------------------------------------------- */
 /* -----> FONT thats used for most NYTimes Paid Post units <----- */
 /* -------------------------------------------------------------- */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
 body.widget {
   max-width: 525px;
   max-height: 600px;
@@ -154,7 +167,8 @@ body.widget {
               padding-right: unset;
               font-family: "Proxima N W01 Reg";
               color: black;
-              font-size: 16px; }
+              font-size: 16px;
+              line-height: 20px; }
               @media all and (min-width: 705px) and (max-width: 974px) {
                 body.widget .container .promotion .pre-entry .content .description p {
                   font-size: 14px; } }
@@ -194,7 +208,8 @@ body.widget {
               width: 100%; } }
           body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
             height: 50px;
-            background-color: #F7F7F7; }
+            background-color: #F7F7F7;
+            color: #666666; }
             @media all and (min-width: 705px) and (max-width: 974px) {
               body.widget .container .promotion .pre-entry .form #first_name, body.widget .container .promotion .pre-entry .form #last_name, body.widget .container .promotion .pre-entry .form #email {
                 height: 25px; } }
@@ -250,5 +265,32 @@ body.widget {
         @media all and (min-width: 705px) and (max-width: 974px) {
           body.widget .container .promotion .post-entry {
             padding-top: unset; } }
+        body.widget .container .promotion .post-entry .entry-details {
+          display: none; }
+        body.widget .container .promotion .post-entry .social_actions_details_wrapper h2 {
+          font-family: "Proxima N W02 Bold";
+          font-size: 27px;
+          text-align: left;
+          color: black;
+          padding-left: 0px;
+          padding-bottom: 0px;
+          margin-left: 35px;
+          margin-bottom: 0px; }
+          @media (max-width: 704px) {
+            body.widget .container .promotion .post-entry .social_actions_details_wrapper h2 {
+              margin-left: 25px;
+              font-size: 24px; } }
+        body.widget .container .promotion .post-entry .social_actions_details_wrapper h3 {
+          font-family: "Proxima N W01 Reg";
+          font-size: 16px;
+          color: black;
+          text-align: left;
+          padding-left: 0px;
+          margin-left: 35px; }
+          @media (max-width: 704px) {
+            body.widget .container .promotion .post-entry .social_actions_details_wrapper h3 {
+              margin-left: 25px;
+              margin-top: 5px;
+              font-size: 14px; } }
       body.widget .container .promotion .footer {
         visibility: hidden; }

@@ -5,6 +5,21 @@
 $desktop_tablet_padding: 35px;
 $mobile_padding: 25px;
 
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
 
 body.widget {
   max-width: 525px;
@@ -178,6 +193,7 @@ body.widget {
 						font-family:"Proxima N W01 Reg";
 						color: black;
 						font-size: 16px;
+						line-height: 20px;
 
 						@include breakpoint ("small") {
 							font-size: 14px;
@@ -226,15 +242,52 @@ body.widget {
 				}
 
 				form {
+
+
+					// .checkbox {
+					// 	input {
+					// 		position: absolute;
+					// 		opacity: 0;
+					// 		cursor: pointer;
+					// 		height: 0;
+					// 		width: 0;
+					// 	}
+
+						
+					// }
+
+					// .checkbox:hover input ~ .checkmark {
+					// 	background-color: #ccc;
+					// }
+
+					// .checkbox input:checked ~ .checkmark {
+					// 	background-color: #2196F3;
+					// }
+
+					
+
+					
+
+					
+
 					@include breakpoint ("mobile") {
 						width: 100%;
 					}
+
+				// #entry-form {
+				// 	.checkbox {
+				// 		span {
+							
+				// 		}
+				// 	}
+				// }
 
 				}
 
 				#first_name, #last_name, #email {
 					height: 50px;
 					background-color: #F7F7F7;
+					color: #666666;
 					
 					@include breakpoint ("small") {
 						height: 25px;
@@ -308,6 +361,43 @@ body.widget {
 
 			@include breakpoint ("small") {
 				padding-top: unset;
+			}
+
+			.entry-details {
+				display: none;
+			}
+
+			.social_actions_details_wrapper {
+				h2 {
+					font-family:"Proxima N W02 Bold";
+					font-size: 27px;
+					text-align: left;
+					color: black;
+					padding-left: 0px;
+					padding-bottom: 0px;
+					margin-left: $desktop_tablet_padding;
+					margin-bottom: 0px;
+
+					@include breakpoint ("mobile") {
+						margin-left: $mobile_padding;
+						font-size: 24px;
+					}
+				}
+
+				h3 {
+					font-family:"Proxima N W01 Reg";
+					font-size: 16px;
+					color: black;
+					text-align: left;
+					padding-left: 0px;
+					margin-left: $desktop_tablet_padding;
+
+					@include breakpoint ("mobile") {
+						margin-left: $mobile_padding;
+						margin-top: 5px;
+						font-size: 14px;
+					}
+				}
 			}
 		}
 
